@@ -1,0 +1,17 @@
+{
+  "name": "autoclick",
+  "version": "0.0.1",
+  "description": "automatic clicks in any position in the room",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node index.js -p 9092"
+  },
+  "keywords": [],
+  "author": "alinpr18",
+  "license": "ISC",
+  "dependencies": {
+    "gnode-api": "^0.2.15"
+  }
+}
