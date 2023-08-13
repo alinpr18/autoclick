@@ -1,6 +1,6 @@
 {
   "name": "autoclick",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "automatic clicks in any position in the room",
   "type": "module",
   "main": "index.js",
