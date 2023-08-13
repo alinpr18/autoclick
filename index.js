@@ -12,6 +12,7 @@ ext.run();
 
 ext.interceptByNameOrHash(HDirection.TOSERVER, "Chat", onCommandSended);
 ext.interceptByNameOrHash(HDirection.TOSERVER, "MoveAvatar", onAutoClick);
+ext.interceptByNameOrHash(HDirection.TOSERVER, "GetGuestRoom", onResetAutoClick);
 
 let extensionEnabled = false;
 let interval;
@@ -25,8 +26,7 @@ function onCommandSended(hMessage) {
     extensionEnabled = !extensionEnabled;
 
     if (!extensionEnabled) {
-      clearInterval(interval);
-      interval = null;
+      onResetAutoClick()
     }
 
     const chatPacket = new HPacket(
@@ -45,4 +45,10 @@ function onAutoClick(hMessage) {
       ext.sendToServer(packet);
     }, 500);
   }
+}
+
+function onResetAutoClick(hMessage) {
+  extensionEnabled = false;
+  clearInterval(interval);
+  interval = null;
 }
