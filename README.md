@@ -4,9 +4,9 @@ Automatic clicks in any position in the room. Type `:autoclick` to start
 
 ## Steps
 
-- Run the command `:autoclick`
+- Type `:autoclick`
 - Select any box from the room and the avatar will start to move
-- Run the command `:autoclick` to deactivate
+- Type again `:autoclick` to deactivate
 
 ## Getting started
 
