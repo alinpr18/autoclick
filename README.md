@@ -1,6 +1,6 @@
 # autoclick
 
-Automatic clicks in any position in the room. Run the command `:autoclick` to activate
+Automatic clicks in any position in the room. Type `:autoclick` to start
 
 ## Steps
 
