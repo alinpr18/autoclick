@@ -21,9 +21,3 @@ Run the extension
 ```bash
 npm run test
 ```
-
-## Manual installation
-
-- Download the zip file found on the releases page
-- Extract the content inside the G-Earth Extensions folder
-- Run G-Earth
